@@ -18,7 +18,7 @@ class VerticalHeadersBuilder extends StatelessWidget {
           alignment: Alignment.topCenter,
           crossFadeState: _getCrossFadeState(context),
           firstChild: Container(
-            color: AppColors.appBarColor,
+            color: AppColors.scaffoldColor,
             child: const VerticalHeaders(),
           ),
           secondChild: Container(),

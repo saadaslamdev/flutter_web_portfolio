@@ -4,6 +4,7 @@ import 'app_assets.dart';
 
 abstract class AppConstants {
   static const double appBarHeight = 80;
+  static const String appTitle = 'Saad Aslam Portfolio';
   static const List<CustomService> services = [
     CustomService(
       service: 'MOBILE DEVELOPMENT',

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_web_portfolio/core/utils/app_colors.dart';
 
 import '../../../core/utils/app_enums.dart';
 import '../../blocs/home_bloc/home_bloc.dart';
@@ -17,11 +18,11 @@ class CustomMenuBtn extends StatelessWidget {
             crossFadeState: _getCrossFadeState(context),
             firstChild: TextButton(
               onPressed: () => _menuBtnClicked(context),
-              child: const Icon(Icons.menu),
+              child: Icon(Icons.menu, color: AppColors.primaryColor,),
             ),
             secondChild: TextButton(
               onPressed: () => _closeBtnClicked(context),
-              child: const Icon(Icons.close),
+              child: Icon(Icons.close, color: AppColors.primaryColor),
             ),
             duration: const Duration(milliseconds: 200),
           ),

@@ -19,6 +19,8 @@ dependencies:
   shimmer: ^3.0.0
   universal_html: ^2.0.9
   cupertino_icons: ^1.0.6
+  adaptive_theme: ^3.6.0
+  delayed_display: ^2.0.0
 
 dev_dependencies:
   flutter_lints: ^4.0.0

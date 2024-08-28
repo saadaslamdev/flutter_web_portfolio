@@ -18,6 +18,7 @@ class ProjectItem extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
         color: AppColors.primaryLight,
+        border: Border.all(color: AppColors.primaryColor, width: 2),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

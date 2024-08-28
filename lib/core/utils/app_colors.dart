@@ -6,8 +6,7 @@ abstract class AppColors {
   static Color lowPriority = const Color(0xff848191);
   static Color primaryColor = const Color(0xff01f38c);
   static Color secondaryColor = const Color(0xff282162);
-  static Color darkColor = const Color(0xff000036);
+  static Color darkColor = const Color(0xff1A1A29);
   static Color scaffoldColor = const Color(0xff1A1A29);
-  static Color appBarColor = const Color(0xff181824);
-  static Color primaryLight = const Color(0xff31313F);
+  static Color primaryLight = const Color(0xff1A1A29);
 }

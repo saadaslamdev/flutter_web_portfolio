@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_enums.dart';
 import '../../../core/utils/app_extensions.dart';
 import '../../blocs/home_bloc/home_bloc.dart';
@@ -16,8 +17,11 @@ class VerticalHeaders extends StatelessWidget {
         if (context.width > DeviceType.ipad.getMaxWidth()) {
           return const SizedBox();
         }
-        return SizedBox(
-          width: context.width,
+        return Container(
+          decoration: BoxDecoration(
+            color: AppColors.white.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(8),
+          ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: List.generate(

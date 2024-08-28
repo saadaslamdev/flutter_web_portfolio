@@ -1,6 +1,8 @@
+import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_extensions.dart';
 import '../../blocs/home_bloc/home_bloc.dart';
 import '../app_bar/vertical_headers_builder.dart';
@@ -62,55 +64,81 @@ class _HomeBodyState extends State<HomeBody> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<HomeBloc, HomeState>(
-      listener: (context, state) {
-        if (state is AppBarHeadersIndexChanged) {
-          Navigator.of(context).maybePop();
-          const duration = Duration(milliseconds: 300);
-          if (state.index == 0) {
-            Scrollable.ensureVisible(
-              introKey.currentContext!,
-              duration: duration,
-            );
+    return DelayedDisplay(
+      slidingCurve: Curves.fastEaseInToSlowEaseOut,
+      delay: const Duration(milliseconds: 350),
+      child: BlocListener<HomeBloc, HomeState>(
+        listener: (context, state) {
+          if (state is AppBarHeadersIndexChanged) {
+            Navigator.of(context).maybePop();
+            const duration = Duration(milliseconds: 300);
+            if (state.index == 0) {
+              Scrollable.ensureVisible(
+                introKey.currentContext!,
+                duration: duration,
+              );
+            }
+            if (state.index == 1) {
+              Scrollable.ensureVisible(
+                aboutKey.currentContext!,
+                duration: duration,
+              );
+            }
+            if (state.index == 2) {
+              Scrollable.ensureVisible(
+                projectKey.currentContext!,
+                duration: duration,
+              );
+            }
+            if (state.index == 3) {
+              Scrollable.ensureVisible(
+                contactKey.currentContext!,
+                duration: duration,
+              );
+            }
           }
-          if (state.index == 1) {
-            Scrollable.ensureVisible(
-              aboutKey.currentContext!,
-              duration: duration,
-            );
-          }
-          if (state.index == 2) {
-            Scrollable.ensureVisible(
-              projectKey.currentContext!,
-              duration: duration,
-            );
-          }
-          if (state.index == 3) {
-            Scrollable.ensureVisible(
-              contactKey.currentContext!,
-              duration: duration,
-            );
-          }
-        }
-      },
-      child: Stack(
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: context.width * .08),
-            child: SingleChildScrollView(
-              controller: _controller,
-              child: Column(
-                children: [
-                  IntroSection(key: introKey),
-                  AboutMeSection(key: aboutKey),
-                  ProjectsSection(key: projectKey),
-                  ContactSection(key: contactKey),
-                ],
+        },
+        child: Stack(
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: context.width * .08),
+              child: ScrollbarTheme(
+                data: ScrollbarThemeData(
+                  thumbColor: WidgetStateProperty.all(AppColors.primaryColor),
+                ),
+                child: Scrollbar(
+                  thumbVisibility: true,
+                  controller: _controller,
+                  child: SingleChildScrollView(
+                    controller: _controller,
+                    child: Column(
+                      children: [
+                        DelayedDisplay(
+                            slidingCurve: Curves.ease,
+                            delay: const Duration(milliseconds: 1200),
+                            child: IntroSection(key: introKey)),
+                        AboutMeSection(key: aboutKey),
+                        ProjectsSection(key: projectKey),
+                        ContactSection(key: contactKey),
+                      ],
+                    ),
+                  ),
+                ),
               ),
             ),
-          ),
-          const VerticalHeadersBuilder(),
-        ],
+            const DelayedDisplay(
+                slidingCurve: Curves.ease,
+                delay: Duration(milliseconds: 1000),
+                child: VerticalHeadersBuilder()),
+            // const Padding(
+            //   padding: EdgeInsets.all(20.0),
+            //   child: Align(
+            //     alignment: Alignment.bottomRight,
+            //     child: ThemeHeader(),
+            //   ),
+            // ),
+          ],
+        ),
       ),
     );
   }
