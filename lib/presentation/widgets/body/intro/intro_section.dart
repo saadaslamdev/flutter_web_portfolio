@@ -27,6 +27,7 @@ class IntroSection extends StatelessWidget {
               children: [
                 IntroText(),
                 IntroCircleImageBox(),
+                SizedBox(width: 1),
               ],
             ),
     );

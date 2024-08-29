@@ -17,7 +17,7 @@ class IntroImage extends StatelessWidget {
     );
 
     return Align(
-      alignment: Alignment.centerLeft,
+      alignment: Alignment.center,
       child: Container(
         width: responsiveSize.getSize(),
         height: responsiveSize.getSize(),
@@ -25,9 +25,9 @@ class IntroImage extends StatelessWidget {
           shape: BoxShape.circle,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.4),
-              blurRadius: 15,
-              spreadRadius: 2.0,
+              color: Colors.black.withOpacity(0.5),
+              blurRadius: 20,
+              spreadRadius: 2,
               offset: const Offset(1, 1),
             ),
           ],

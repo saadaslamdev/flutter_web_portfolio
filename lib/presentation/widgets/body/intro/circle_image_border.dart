@@ -21,6 +21,14 @@ class CircleImageBorder extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.primaryColor,
         shape: BoxShape.circle,
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.primaryColor.withOpacity(0.7),
+            blurRadius: 25,
+            spreadRadius: 3,
+            offset: const Offset(1, 1),
+          ),
+        ],
       ),
     );
   }

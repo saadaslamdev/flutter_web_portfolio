@@ -9,4 +9,7 @@ abstract class AppColors {
   static Color darkColor = const Color(0xff1A1A29);
   static Color scaffoldColor = const Color(0xff1A1A29);
   static Color primaryLight = const Color(0xff1A1A29);
+  static Color greenColor = const Color(0xf461df25);
+  static Color redColor = const Color(0xf4df2535);
+  static Color blueColor = const Color(0xff4a51e0);
 }

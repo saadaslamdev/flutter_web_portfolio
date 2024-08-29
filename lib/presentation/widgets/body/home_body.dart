@@ -104,7 +104,7 @@ class _HomeBodyState extends State<HomeBody> {
               padding: EdgeInsets.symmetric(horizontal: context.width * .08),
               child: ScrollbarTheme(
                 data: ScrollbarThemeData(
-                  thumbColor: WidgetStateProperty.all(AppColors.primaryColor),
+                  thumbColor: WidgetStateProperty.all(AppColors.primaryColor.withOpacity(0.3)),
                 ),
                 child: Scrollbar(
                   thumbVisibility: true,
