@@ -44,4 +44,10 @@ abstract class AppStyles {
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle italic = TextStyle(
+    fontSize: 12,
+    fontStyle: FontStyle.italic,
+    fontWeight: FontWeight.w100,
+    color: AppColors.white,
+  );
 }

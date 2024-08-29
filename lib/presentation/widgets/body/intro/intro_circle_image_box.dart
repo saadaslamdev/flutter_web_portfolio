@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import '../../../../core/utils/app_extensions.dart';
 import '../../../../data/models/responsive_size.dart';
@@ -19,7 +20,7 @@ class IntroCircleImageBox extends StatelessWidget {
     return SizedBox(
       height: responsiveSize.getSize(),
       child: const Stack(
-        alignment: Alignment.centerRight,
+        alignment: Alignment.center,
         children: [
           CircleImageBorder(),
           IntroImage(),

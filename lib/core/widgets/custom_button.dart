@@ -9,6 +9,7 @@ class CustomButton extends StatelessWidget {
     super.key,
     this.height,
     required this.label,
+    this.labelColor,
     this.icon,
     this.backgroundColor,
     this.borderColor,
@@ -22,6 +23,7 @@ class CustomButton extends StatelessWidget {
   final double? height;
   final IconData? icon;
   final String label;
+  final Color? labelColor;
   final double? width;
 
   @override
@@ -41,7 +43,7 @@ class CustomButton extends StatelessWidget {
             Flexible(
               child: AutoSizeText(
                 label,
-                style: AppStyles.s16,
+                style: AppStyles.s16.copyWith(color: labelColor),
                 textAlign: TextAlign.center,
                 minFontSize: 8,
                 maxLines: 1,

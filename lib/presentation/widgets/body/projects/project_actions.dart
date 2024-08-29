@@ -22,6 +22,7 @@ class ProjectActions extends StatelessWidget {
             Expanded(
               child: CustomButton(
                 label: 'Preview',
+                labelColor: AppColors.scaffoldColor,
                 backgroundColor: AppColors.primaryColor,
                 onPressed: () {
                   html.window.open(project.previewLink!, '_blank');

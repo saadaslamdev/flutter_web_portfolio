@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'package:universal_html/html.dart' as html;
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
+import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../core/widgets/custom_button.dart';
 
@@ -77,7 +78,10 @@ class _ContactFormState extends State<ContactForm> {
             const SizedBox(height: 16),
             CustomButton(
               label: 'Submit',
-              onPressed: () {},
+              labelColor: AppColors.scaffoldColor,
+              onPressed: () async {
+                await sendEmail();
+              },
               backgroundColor: AppColors.primaryColor,
               width: _getFormWidth(context.width),
             ),
@@ -85,6 +89,33 @@ class _ContactFormState extends State<ContactForm> {
         ),
       ),
     );
+  }
+
+  sendEmail() async {
+    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+    if (_nameController.text.isEmpty ||
+        _emailController.text.isEmpty ||
+        _subjectController.text.isEmpty ||
+        _messageController.text.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          backgroundColor: AppColors.primaryColor,
+          content: Text("Please fill all the fields!",
+              style: TextStyle(color: AppColors.scaffoldColor)),
+        ),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          backgroundColor: AppColors.primaryColor,
+          content: Text("Redirecting to Gmail!",
+              style: TextStyle(color: AppColors.scaffoldColor)),
+        ),
+      );
+      html.window.open(
+          "${AppStrings.developerEmail}?subject=${_subjectController.text}&body=My Name is ${_nameController.text} with ${_emailController.text} and I would like to send you a message: ${_messageController.text}",
+          '_blank');
+    }
   }
 
   double _getFormWidth(double deviceWidth) {

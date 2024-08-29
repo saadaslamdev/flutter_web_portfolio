@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_web_portfolio/core/utils/app_extensions.dart';
+import 'package:universal_html/html.dart' as html;
 
+import '../../../core/utils/app_assets.dart';
+import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_enums.dart';
+import '../../../core/utils/app_strings.dart';
 import '../../blocs/home_bloc/home_bloc.dart';
 import 'custom_header_btn.dart';
 
@@ -13,10 +18,66 @@ class HorizontalHeaders extends StatelessWidget {
     return BlocBuilder<HomeBloc, HomeState>(
       builder: (context, state) {
         return Row(
-          children: List.generate(
-            AppBarHeaders.values.length,
-            (index) => CustomHeaderBtn(headerIndex: index),
-          ),
+          children: [
+            ...List.generate(
+              AppBarHeaders.values.length,
+              (index) {
+                return CustomHeaderBtn(headerIndex: index);
+              },
+            ),
+            Visibility(
+              visible:
+                  (context.width > DeviceType.smallScreenLaptop.getMaxWidth()),
+              replacement: Container(),
+              child: InkWell(
+                hoverColor: Colors.transparent,
+                splashColor: Colors.transparent,
+                enableFeedback: false,
+                highlightColor: Colors.transparent,
+                onTap: () {
+                  html.window.open(AppStrings.developerResume, '_blank');
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: AppColors.primaryColor,
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppColors.primaryColor.withOpacity(0.6),
+                          blurRadius: 20,
+                          spreadRadius: 2.0,
+                          offset: const Offset(1, 1),
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "Resume",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.scaffoldColor),
+                        ),
+                        Image.asset(
+                          AppAssets.resumeGif,
+                          gaplessPlayback: true,
+                          repeat: ImageRepeat.repeat,
+                          scale: 0.5,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
         );
       },
     );
