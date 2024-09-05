@@ -1,38 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+  <head>
+    <base href="$FLUTTER_BASE_HREF" />
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="A new Flutter project." />
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="flutter_web_portfolio" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+    <title>flutter_web_portfolio</title>
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- Styling for loading indicator -->
+    <style>
+      body {
+        background: #1A1A29;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Ensure the loader is centered */
+      }
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_web_portfolio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+      .loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 120px; /* Increased width */
+        aspect-ratio: 1;
+        color: #01f38c;
+        background: radial-gradient(20px, currentColor 94%, #0000); /* Adjusted gradient size */
+        transform: translate(-50%, -50%);
+      }
+      .loader:before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background:
+          radial-gradient(20px at bottom right, #0000 94%, currentColor) top left,
+          radial-gradient(20px at bottom left, #0000 94%, currentColor) top right,
+          radial-gradient(20px at top right, #0000 94%, currentColor) bottom left,
+          radial-gradient(20px at top left, #0000 94%, currentColor) bottom right;
+        background-size: 40px 40px; /* Adjusted background size */
+        background-repeat: no-repeat;
+        animation: l18 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+      }
+      @keyframes l18 {
+        33%  { inset: -30px; transform: rotate(0deg) } /* Adjusted inset */
+        66%  { inset: -30px; transform: rotate(90deg) } /* Adjusted inset */
+        100% { inset: 0; transform: rotate(90deg) }
+      }
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+      /* Mobile screen adjustments */
+      @media (max-width: 768px) {
+        .loader {
+          width: 80px; /* Adjusted width for mobile */
+        }
+      }
 
-  <title>flutter_web_portfolio</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
+      /* Large screen adjustments */
+      @media (min-width: 1200px) {
+        .loader {
+          width: 80px; /* Adjusted width for large screens */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Loading Indicator -->
+    <div class="loader"></div>
+
+    <!-- Script for Flutter PWA support -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("flutter-first-frame", function () {
+          navigator.serviceWorker.register("flutter_service_worker.js");
+        });
+      }
+    </script>
+    
+    <!-- Flutter web engine script -->
+    <script src="main.dart.js" type="application/javascript"></script>
+
+    <!-- Removes the loading indicator after 10 seconds or when Flutter is ready -->
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                var loadingIndicator = document.querySelector(".loader");
+                if (loadingIndicator) {
+                    loadingIndicator.remove();
+                }
+            }, 10000); // 10-second fallback in case the app takes long to load
+        };
+    </script>
+  </body>
 </html>
