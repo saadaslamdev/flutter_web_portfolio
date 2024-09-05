@@ -31,12 +31,12 @@ class DeveloperNameBtn extends StatelessWidget {
                   children: [
                     Text(
                       AppStrings.developerNameStyle,
-                      textScaler: const TextScaler.linear(1.4),
+                      textScaler: const TextScaler.linear(1.5),
                       style: AppStyles.italic,
                     ),
                     Text(
                       AppStrings.developerFlutterGeek,
-                      textScaler: const TextScaler.linear(0.9),
+                      textScaler: const TextScaler.linear(1),
                       style: AppStyles.italic,
                     ),
                   ],
@@ -45,7 +45,7 @@ class DeveloperNameBtn extends StatelessWidget {
               Expanded(
                   child: Image.asset(
                 AppAssets.flutterDevLogo,
-                scale: 5,
+                scale: 5.5,
                 gaplessPlayback: true,
               ))
             ],
