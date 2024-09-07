@@ -8,4 +8,8 @@ abstract class AppAssets {
   static const flutterDevLogo = '$_basePath/flutterDevLogo.gif';
   static const flutterGif = '$_basePath/flutter_gif.gif';
   static const resumeGif = '$_basePath/resume.gif';
+
+  // local app banners
+  static const String socialSaverBanner = '$_basePath/SocialSaver-Banner.png';
+  static const String chatterBoxBanner = '$_basePath/ChatterBox-Banner.png';
 }
