@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import '../../data/models/custom_service.dart';
 import '../../data/models/project.dart';
 import 'app_assets.dart';
@@ -27,32 +29,33 @@ abstract class AppConstants {
   ];
   static const List<Project> projects = [
     Project(
-      name: 'Live score',
+      name: 'SPILL',
       imageUrl:
-          '',
+          'https://play-lh.googleusercontent.com/OgPNMYVdHD50oX_oFS5lcM_6dT2g0luRvdwdp5DQ-gU7p-d04wqv94etEwg-kOQhW_E=w240-h480-rw',
       description:
-          'A football application to display all related matches and rankings in all international and local tournaments',
-      githubRepoLink: 'https://github.com/radyhaggag/live_score',
-      previewLink: 'https://youtu.be/HSIosFd6Sys',
+          'SPILL is a social app to create memes, share hot takes, and connect in real-time. Designed for culture-driving communities, it offers live video, audio, and chat experiences.',
+      googlePlay:
+          'https://play.google.com/store/apps/details?id=com.spill.spill&hl=en',
+      backgroundColor: Color(0xFF171717),
     ),
     Project(
-      name: 'Instagram clone',
-      imageUrl:
-          '',
+      name: 'SOCIAL SAVER',
+      imgPath: AppAssets.socialSaverBanner,
       description:
-          'Social media application for share posts and stories with people, One-to-one chat, Share reels videos',
+          'Social Saver lets you easily download videos from YouTube, Instagram, TikTok, Facebook, and Snapchat straight to your gallery.',
       githubRepoLink:
-          'https://github.com/radyhaggag/Instagram-Clone-With-Clean-Architecture',
-      previewLink: 'https://youtu.be/MuuVjqrR49g',
+          'https://github.com/saadaslamdev/flutter_social_video_downloader',
+      googlePlay:
+          'https://drive.google.com/drive/folders/1wi7WafUQrGTXZ-Lo4V9xAeLbYoxsls9j?usp=sharing',
     ),
     Project(
-      name: 'TikTok Downloader',
-      imageUrl:
-          '',
+      name: 'CHATTER BOX',
+      imgPath: AppAssets.chatterBoxBanner,
       description:
-          'An application for download videos from tiktok and save it to gallery.',
-      githubRepoLink: 'https://github.com/radyhaggag/tiktok_downloader',
-      previewLink: 'https://youtu.be/mWeA625pcrI',
-    ),
+          'ChatterBox lets you create groups, manage contacts, and chat in real-time. Connect with ease in a secure, user-friendly app.',
+      githubRepoLink: 'https://github.com/saadaslamdev/flutter_chatterbox_app',
+      googlePlay:
+          'https://drive.google.com/drive/folders/1wi7WafUQrGTXZ-Lo4V9xAeLbYoxsls9j?usp=sharing',
+    )
   ];
 }

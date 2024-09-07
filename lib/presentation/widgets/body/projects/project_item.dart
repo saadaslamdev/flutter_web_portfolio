@@ -16,14 +16,14 @@ class ProjectItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(15),
         color: AppColors.primaryLight,
-        border: Border.all(color: AppColors.primaryColor, width: 2),
+        border: Border.all(color: AppColors.primaryColor, width: 3),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ProjectImage(imageUrl: project.imageUrl),
+          ProjectImage(project: project),
           const SizedBox(height: 16),
           FittedBox(
             child: Text(
@@ -41,7 +41,6 @@ class ProjectItem extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          // if (project.previewLink != null || project.githubRepoLink != null)
           ProjectActions(project: project)
         ],
       ),
