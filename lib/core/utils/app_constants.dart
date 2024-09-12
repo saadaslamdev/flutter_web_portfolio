@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_portfolio/data/models/skill.dart';
 
 import '../../data/models/custom_service.dart';
 import '../../data/models/project.dart';
@@ -7,24 +8,59 @@ import 'app_assets.dart';
 abstract class AppConstants {
   static const double appBarHeight = 80;
   static const String appTitle = 'Saad Aslam Portfolio';
+  static const List<Skill> skills = [
+    Skill(
+      skillName: 'FRAMEWORKS | TECHNOLOGIES',
+      skillLogos: [
+        AppAssets.flutterLogo,
+        AppAssets.unityLogo,
+        AppAssets.flameEngineLogo,
+        AppAssets.pixiJsLogo,
+      ],
+    ),
+    Skill(
+      skillName: 'PROGRAMMING LANGUAGES',
+      skillLogos: [
+        AppAssets.dartLogo,
+        AppAssets.cSharpLogo,
+        AppAssets.typeScriptLogo,
+        AppAssets.pythonLogo,
+      ],
+    ),
+    Skill(
+      skillName: 'SERVERS | DATABASES',
+      skillLogos: [
+        AppAssets.firebaseLogo,
+        AppAssets.supabaseLogo,
+      ],
+    ),
+    Skill(
+      skillName: 'VERSION CONTROL',
+      skillLogos: [
+        AppAssets.gitHubLogo,
+        AppAssets.gitBashLogo,
+      ],
+    )
+  ];
+
   static const List<CustomService> services = [
     CustomService(
-      service: 'MOBILE DEVELOPMENT',
+      service: 'MOBILE APP DEVELOPMENT',
       logo: AppAssets.androidLogo,
       description:
-          'I am a Junior mobile developer. I have experience using Dart and Flutter Framework.',
+          'As a Senior Mobile Developer, I have deep expertise in Dart and Flutter, specializing in building high-performance, responsive mobile apps.',
     ),
     CustomService(
-      service: 'UI & UX DESIGNING',
+      service: 'RESPONSIVNESS',
       logo: AppAssets.uiDesignLogo,
       description:
-          'I design beautiful web interfaces with Figma and Adobe XD. I design beautiful web interfaces with Figma and Adobe XD.',
+          'I ensure that mobile applications are highly responsive, delivering smooth and seamless interactions across a wide range of devices and screen sizes. With a focus on optimizing performance, I create apps that adapt effortlessly, providing users with fast, fluid, and consistent experiences.',
     ),
     CustomService(
-      service: 'WEB SCRAPING',
+      service: 'MOBILE GAME DEVELOPMENT',
       logo: AppAssets.scrappingLogo,
       description:
-          'I can collect content and data from the internet then manipulate and analyze as needed.',
+          'I develop immersive and interactive games using Unity, delivering engaging experiences with attention to detail and creativity.',
     ),
   ];
   static const List<Project> projects = [

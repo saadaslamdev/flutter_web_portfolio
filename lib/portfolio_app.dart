@@ -8,6 +8,7 @@ import 'presentation/views/home_view.dart';
 class PortfolioApp extends StatelessWidget {
   const PortfolioApp({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
