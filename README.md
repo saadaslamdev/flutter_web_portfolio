@@ -36,5 +36,5 @@ Here's how to get the portfolio up and running:
 ## 📱 Mobile Home Screenshot
 Here's a peek at the mobile version of the home page:
 
-   ![Mobile Home](./assets/previews/mobile_home_preview.png)
+   ![Mobile Home](./assets/previews/mobile_home_prevew.png)
    ![Mobile Side Bar View](./assets/previews/mobile_sidebar_preview.JPG)
