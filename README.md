@@ -2,11 +2,8 @@
 
 This is a stunning Flutter Web portfolio, meticulously crafted based on a Figma design and elegantly hosted on Firebase.
 
-## 🌐 Demo URL
-Explore the live portfolio: [https://saifalmajd.web.app/](https://saifalmajd.web.app/)
-
-## 📺 Youtube Preview
-Watch a sneak peek of the portfolio in action: [YouTube Preview](https://youtu.be/_llGOcJvPzA)
+## 🌐 Live URL
+Explore the live portfolio: [https://saifalmajd.web.app/](https://saadaslam-portfolio.web.app/)
 
 ## 💻 Requirements
 To tinker with this project, you'll need the following:
@@ -23,7 +20,6 @@ Here's how to get the portfolio up and running:
    ```
 
 ## 📷 Previews
-Take a glimpse of the portfolio through these captivating screenshots:
 
 - Home
   ![Home](./assets/previews/home_preview.JPG)
