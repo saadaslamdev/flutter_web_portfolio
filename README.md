@@ -1,16 +1,44 @@
-# flutter_web_portfolio
+# Portfolio: Flutter Web Portfolio
 
-A new Flutter project.
+This is a stunning Flutter Web portfolio, meticulously crafted based on a Figma design and elegantly hosted on Firebase.
 
-## Getting Started
+## 🌐 Demo URL
+Explore the live portfolio: [https://saifalmajd.web.app/](https://saifalmajd.web.app/)
 
-This project is a starting point for a Flutter application.
+## 📺 Youtube Preview
+Watch a sneak peek of the portfolio in action: [YouTube Preview](https://youtu.be/_llGOcJvPzA)
 
-A few resources to get you started if this is your first Flutter project:
+## 💻 Requirements
+To tinker with this project, you'll need the following:
+- Any Operating System (MacOS, Linux, Windows)
+- An Integrated Development Environment (IDE) with Flutter SDK installed (Android Studio, VSCode, etc.)
+- A basic understanding of Dart and Flutter.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 👨‍💻 How to Run
+Here's how to get the portfolio up and running:
+1. Clone the repository: [GitHub Repository](git@github.com:saadaslamdev/flutter_web_portfolio.git)
+2. Run the project in your browser using the command:
+   ```
+   flutter run -d chrome
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📷 Previews
+Take a glimpse of the portfolio through these captivating screenshots:
+
+- Home
+  ![Home](./assets/previews/home_preview.JPG)
+
+- About
+  ![About](./assets/previews/about_preview.JPG)
+
+- Projects 
+  ![Projects](./assets/previews/projects_preview.JPG)
+
+- Contact
+  ![Contact](./assets/previews/contact_preview.JPG)
+
+## 📱 Mobile Home Screenshot
+Here's a peek at the mobile version of the home page:
+
+   ![Mobile Home](./assets/previews/mobile_home_preview.png)
+   ![Mobile Side Bar View](./assets/previews/mobile_sidebar_preview.JPG)
