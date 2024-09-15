@@ -28,7 +28,7 @@ Here's how to get the portfolio up and running:
   ![About](./assets/previews/about_preview.JPG)
 
 - Projects 
-  ![Projects](./assets/previews/projects_preview.JPG)
+  ![Projects](./assets/previews/projects_prevew.JPG)
 
 - Contact
   ![Contact](./assets/previews/contact_preview.JPG)
