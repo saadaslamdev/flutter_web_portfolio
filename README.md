@@ -13,8 +13,15 @@ To tinker with this project, you'll need the following:
 
 ## 👨‍💻 How to Run
 Here's how to get the portfolio up and running:
-1. Clone the repository: [GitHub Repository](git@github.com:saadaslamdev/flutter_web_portfolio.git)
-2. Run the project in your browser using the command:
+1. Clone the repository:
+    ```
+   git@github.com:saadaslamdev/flutter_web_portfolio.git
+   ```
+2. Run the following command in terminal to resolve the dependencies:
+    ```
+   flutter pub get
+   ```
+3. Run the project in your browser using the command:
    ```
    flutter run -d chrome
    ```
