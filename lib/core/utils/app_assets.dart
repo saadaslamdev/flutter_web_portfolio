@@ -1,5 +1,5 @@
 const _basePath = 'assets/images';
-const _iconBasePath = '$_basePath/social_icons';
+const _iconBasePath = '$_basePath/icons';
 abstract class AppAssets {
   static const devImg = '$_basePath/dev_img.png';
   static const androidLogo = '$_basePath/android.svg';
@@ -12,13 +12,16 @@ abstract class AppAssets {
   // local app banners
   static const String socialSaverBanner = '$_basePath/SocialSaver-Banner.png';
   static const String chatterBoxBanner = '$_basePath/ChatterBox-Banner.png';
+  static const String elPatronBanner = '$_basePath/ElPatronIdleCartel.jpg';
+  static const String narcosBanner = '$_basePath/NarcosIdleEmpire.png';
+  static const String hightideBanner = '$_basePath/HighTideWeedGame.jpeg';
 
   // Skill logos
   static const flutterLogo = '$_iconBasePath/flutter.png';
   static const flameEngineLogo = '$_iconBasePath/flameEngine.png';
   static const unityLogo = '$_iconBasePath/unity.png';
   static const pixiJsLogo = '$_iconBasePath/pixiJs.png';
-  static const gitHubLogo = '$_iconBasePath/github.png';
+  static const gitHubLogo = '$_iconBasePath/gitHub.png';
 
   static const dartLogo = '$_iconBasePath/dart.png';
   static const cSharpLogo = '$_iconBasePath/cSharp.png';

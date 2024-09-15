@@ -1,5 +1,5 @@
 name: flutter_web_portfolio
-description: "A new Flutter project."
+description: "A showcase of my skills and projects in Mobile Application development."
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
@@ -41,7 +41,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/images/social_icons/
+    - assets/images/icons/
 
   fonts:
     - family: Poppins
