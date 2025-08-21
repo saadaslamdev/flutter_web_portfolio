@@ -15,6 +15,7 @@ abstract class AppAssets {
   static const String elPatronBanner = '$_basePath/ElPatronIdleCartel.jpg';
   static const String narcosBanner = '$_basePath/NarcosIdleEmpire.png';
   static const String hightideBanner = '$_basePath/HighTideWeedGame.jpeg';
+  static const String tollanSeason1Banner = '$_basePath/tollanSurvivorsSeason1.jpg';
 
   // Skill logos
   static const flutterLogo = '$_iconBasePath/flutter.png';

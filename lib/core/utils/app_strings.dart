@@ -1,16 +1,16 @@
 abstract class AppStrings {
   static const String developerName = 'Saad Aslam';
   static const String developerNameStyle = "</SaadAslam>";
-  static const String developerFlutterGeek = "Visionary App Dev :')";
+  static const String developerFlutterGeek = "Visionary Engineer :')";
 
   static const String helloIM = 'Hello, I’m';
   static const String introMsg =
-      "Software Engineer with 2+ years of experience in Flutter. Expert in responsive UI design and clean code, crafting high-quality apps and Mobile games for seamless, innovative user experiences.";
+      "Software Engineer with 3+ years of experience in Unity. Skilled in designing engaging gameplay mechanics, optimizing performance, and writing clean, scalable code. Experienced in developing Mobile and Web Games across Idle Clicker, Hypercasual, RPG, and Web3 genres, delivering seamless and innovative player experiences.";
   static String aboutMeMsg =
-      "I'm a versatile Software Engineer with a deep understanding of both the Flutter framework and Unity. My expertise spans across UI design, API integration, clean code practices, and a strong foundation in SOLID principles and clean architecture. I've successfully completed numerous projects, demonstrating my ability to provide creative, high-quality solutions with a focus on delivering seamless user experiences. My skills extend to game development using Unity and Flutter's Flame engine, where I bring immersive, engaging applications to life, ensuring a polished, user-friendly experience without issues.";
-  static const String numOfExperience = '2+';
+      "Software Engineer with 3+ years of experience in Unity and Flutter. Skilled in building engaging gameplay mechanics, scalable architectures, and secure backend integrations. Experienced across Idle Clicker, Hypercasual, RPG, and Web3 games, as well as cross-platform apps using Flutter, Firebase, and Supabase. Contributed to titles like El Patrón – Idle Cartel (1M+ downloads), High Tide: Weed Game, and Tollan Survivors (Web3 RPG, 3 seasons), delivering polished and high-quality user experiences.";
+  static const String numOfExperience = '3+';
   static const String experienceMsg =
-      'Years of experience, Specialized in building apps, while ensuring a seamless web experience for end users.';
+      'years of experience specializing in developing mobile & web apps and games, with a focus on delivering seamless user experiences across platforms.';
   static const String servicesIOffer = 'The services i offer:';
   static const String mySkillSet = 'My skill set:';
   static const String featuredProjects = 'Featured projects';

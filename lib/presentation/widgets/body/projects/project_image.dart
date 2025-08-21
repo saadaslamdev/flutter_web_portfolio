@@ -10,6 +10,7 @@ class ProjectImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var isFill = project.isFill ?? false;
     return Flexible(
       flex: 2,
       child: Container(
@@ -39,7 +40,7 @@ class ProjectImage extends StatelessWidget {
                     imageUrl: project.imageUrl!,
                     fadeInDuration: const Duration(seconds: 1),
                     width: double.infinity,
-                    fit: BoxFit.fitHeight,
+                    fit: isFill ? BoxFit.fill : BoxFit.fitHeight,
                     errorWidget: (context, url, error) {
                       return SizedBox(
                         width: double.infinity,

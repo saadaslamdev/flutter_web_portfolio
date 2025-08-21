@@ -9,6 +9,7 @@ class Project {
   final String? previewLink;
   final String? googlePlay;
   final Color? backgroundColor;
+  final bool? isFill; 
 
   const Project({
     required this.name,
@@ -19,5 +20,6 @@ class Project {
     this.previewLink,
     this.googlePlay,
     this.backgroundColor,
+    this.isFill
   });
 }

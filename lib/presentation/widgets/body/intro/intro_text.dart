@@ -29,16 +29,9 @@ class IntroText extends StatelessWidget {
                   : AppStyles.s32.copyWith(color: AppColors.white),
               textAlign: _getTextAlign(context.width),
               softWrap: true,
-            ),
-            Image.asset(
-              alignment: Alignment.bottomCenter,
-              AppAssets.flutterGif,
-              scale: 15,
-              gaplessPlayback: true,
             )
           ],
         ),
-        const SizedBox(height: 6),
         Text(
           AppStrings.developerName,
           style: context.width < DeviceType.ipad.getMaxWidth()

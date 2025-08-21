@@ -12,8 +12,8 @@ abstract class AppConstants {
     Skill(
       skillName: 'FRAMEWORKS | TECHNOLOGIES',
       skillLogos: [
-        AppAssets.flutterLogo,
         AppAssets.unityLogo,
+        AppAssets.flutterLogo,
         AppAssets.flameEngineLogo,
         AppAssets.pixiJsLogo,
       ],
@@ -45,6 +45,12 @@ abstract class AppConstants {
 
   static const List<CustomService> services = [
     CustomService(
+      service: 'MOBILE & WEB GAME DEVELOPMENT',
+      logo: AppAssets.scrappingLogo,
+      description:
+          'I develop immersive and interactive games using Unity, delivering engaging experiences with attention to detail and creativity.',
+    ),
+    CustomService(
       service: 'MOBILE APP DEVELOPMENT',
       logo: AppAssets.androidLogo,
       description:
@@ -56,14 +62,59 @@ abstract class AppConstants {
       description:
           'I ensure that mobile applications are highly responsive, delivering smooth and seamless interactions across a wide range of devices and screen sizes. With a focus on optimizing performance, I create apps that adapt effortlessly, providing users with fast, fluid, and consistent experiences.',
     ),
-    CustomService(
-      service: 'MOBILE GAME DEVELOPMENT',
-      logo: AppAssets.scrappingLogo,
-      description:
-          'I develop immersive and interactive games using Unity, delivering engaging experiences with attention to detail and creativity.',
-    ),
   ];
   static const List<Project> projects = [
+    Project(
+      name: 'Tollan Survivors Season 1 (Web3 RPG)',
+      imgPath: AppAssets.tollanSeason1Banner,
+      isFill: true,
+      description:
+          'Season 1 is backed by a USD 3,000 seed-funded prize pool, and it grows with the community. 70% of all Crown revenue this season will be added to the player-funded prize pool.',
+      previewLink:
+          'https://medium.com/@tollan/tollan-survivors-season-1-the-ogre-hunt-begins-3c30e6bb49f7',
+    ),
+    Project(
+      name: 'Tollan Survivors Season 0.5 (Web3 RPG)',
+      imageUrl: "https://miro.medium.com/v2/resize:fit:700/1*_sGVyY6RU8e7fcMu7LIfkQ.png",
+      isFill: true,
+      description:
+          'Season 0.5 of Tollan Survivors kicks off as a high-stakes, focused event designed to test new gameplay, sharpen the competition, and prepare the community for the launch of Season 1.',
+      previewLink:
+          'https://medium.com/@tollan/season-0-5-has-arrived-desert-strike-2425a411a944',
+    ),
+    Project(
+      name: 'Tollan Survivors Season 0 (Web3 RPG)',
+      imageUrl: "https://miro.medium.com/v2/resize:fit:700/1*NWJpP-DoEtLgRAtaO-LYcg.png",
+      isFill: true,
+      description:
+          'Season 0 is a major milestone in the evolution of Tollan Survivors. It introduces Empowered Runs — skill-based sessions where your performance earns leaderboard positions and soulbound points tied to your identity.',
+      previewLink:
+          'https://medium.com/@tollan/tollan-survivors-season-0-is-here-446da085890e',
+    ),
+    Project(
+      name: 'El Patrón - Idle Cartel (1M+ Downloads)',
+      imgPath: AppAssets.elPatronBanner,
+      description:
+          'El Patrón: Idle Cartel” is an exciting idle game where you build your empire in the dangerous world of cartels. Forge alliances, face rivals, and expand your operations to become the ultimate underground tycoon. With a gripping storyline and intense challenges, rise to the top of the cartel world.',
+      googlePlay:
+          'https://play.google.com/store/apps/details?id=com.tiltingpoint.bigwolf.narcosfactory&hl=en',
+    ),
+    Project(
+      name: 'Narcos: Idle Empire of Crime (50K+ Downloads)',
+      imgPath: AppAssets.narcosBanner,
+      description:
+          'Narcos: Idle Empire” is a thrilling idle game set in Medellín’s drug wars. Build your empire, make strategic choices, and outmaneuver rival cartels to become the top kingpin. Featuring original storylines, familiar characters, and challenging gameplay, reshape the history of the Colombian drug trade.',
+      googlePlay:
+          'https://play.google.com/store/apps/details?id=com.bigwolf.narcos.idle.empire&hl=en',
+    ),
+    Project(
+      name: 'High Tide: Weed Game (50K+ Downloads)',
+      imgPath: AppAssets.hightideBanner,
+      description:
+          'High Tide: Weed Game turns a 80s surf shop into a top underground grow op. Build, upgrade, and hire Beach Bums to rake in cash. Enjoy stoner comedy, surf, and unlock epic rewards in this nostalgic idle game!',
+      googlePlay:
+          'https://play.google.com/store/apps/details?id=com.hazyarts.weed.hightide&hl=en',
+    ),
     Project(
       name: 'SPILL (50K+ Downloads)',
       imageUrl:
@@ -89,29 +140,5 @@ abstract class AppConstants {
           'ChatterBox lets you create groups, manage contacts, and chat in real-time. Connect with ease in a secure, user-friendly app.',
       githubRepoLink: 'https://github.com/saadaslamdev/flutter_chatterbox_app',
     ),
-    Project(
-      name: 'El Patrón - Idle Cartel (1M+ Downloads)',
-      imgPath: AppAssets.elPatronBanner,
-      description:
-          'El Patrón: Idle Cartel” is an exciting idle game where you build your empire in the dangerous world of cartels. Forge alliances, face rivals, and expand your operations to become the ultimate underground tycoon. With a gripping storyline and intense challenges, rise to the top of the cartel world.',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.tiltingpoint.bigwolf.narcosfactory&hl=en',
-    ),
-    Project(
-      name: 'Narcos: Idle Empire of Crime (50K+ Downloads)',
-      imgPath: AppAssets.narcosBanner,
-      description:
-          'Narcos: Idle Empire” is a thrilling idle game set in Medellín’s drug wars. Build your empire, make strategic choices, and outmaneuver rival cartels to become the top kingpin. Featuring original storylines, familiar characters, and challenging gameplay, reshape the history of the Colombian drug trade.',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.bigwolf.narcos.idle.empire&hl=en',
-    ),
-    Project(
-      name: 'High Tide: Weed Game (50K+ Downloads)',
-      imgPath: AppAssets.hightideBanner,
-      description:
-          'High Tide: Weed Game turns a 80s surf shop into a top underground grow op. Build, upgrade, and hire Beach Bums to rake in cash. Enjoy stoner comedy, surf, and unlock epic rewards in this nostalgic idle game!',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.hazyarts.weed.hightide&hl=en',
-    )
   ];
 }
