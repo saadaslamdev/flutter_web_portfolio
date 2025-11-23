@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_portfolio/presentation/widgets/body/about_me/skill_item_grid.dart';
+import 'package:saad_aslam_portfolio/presentation/widgets/body/about_me/skill_item_grid.dart';
 
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styles.dart';

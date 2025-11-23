@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_portfolio/presentation/widgets/body/contact/contact_me.dart';
-import 'package:flutter_web_portfolio/presentation/widgets/body/contact/social_medial_icons.dart';
+import 'package:saad_aslam_portfolio/presentation/widgets/body/contact/contact_me.dart';
+import 'package:saad_aslam_portfolio/presentation/widgets/body/contact/social_medial_icons.dart';
 
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styles.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_portfolio/data/models/skill.dart';
+import 'package:saad_aslam_portfolio/data/models/skill.dart';
 
 import '../../data/models/custom_service.dart';
 import '../../data/models/project.dart';

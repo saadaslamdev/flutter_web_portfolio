@@ -1,11 +1,11 @@
 {
-    "name": "flutter_web_portfolio",
-    "short_name": "flutter_web_portfolio",
+    "name": "Saad Aslam | Software Engineer Portfolio",
+    "short_name": "Saad Aslam’s Portfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Explore Saad Aslam’s game development portfolio — featuring Unity projects, gameplay systems, and creative design work.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

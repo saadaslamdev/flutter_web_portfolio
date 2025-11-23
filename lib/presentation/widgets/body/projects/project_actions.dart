@@ -46,7 +46,7 @@ class ProjectActions extends StatelessWidget {
               const SizedBox(width: 18),
             Expanded(
               child: CustomButton(
-                label: 'play store',
+                label: 'Play Store',
                 borderColor: AppColors.primaryColor,
                 onPressed: () {
                   html.window.open(project.googlePlay!, '_blank');

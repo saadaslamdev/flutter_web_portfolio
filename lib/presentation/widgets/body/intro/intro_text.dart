@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_portfolio/presentation/widgets/body/contact/social_medial_icons.dart';
+import 'package:saad_aslam_portfolio/presentation/widgets/body/contact/social_medial_icons.dart';
 
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
